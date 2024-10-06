@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مولد صور المعركة</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>  مولد صور المواجهة   </h1>
+        <div class="form">
+            <label for="title">عنوان التحدي:</label>
+            <input type="text" id="title" placeholder="أدخل عنوان المعركة">
+
+            <label for="player1">اسم اللاعب 1:</label>
+            <input type="text" id="player1" placeholder="أدخل اسم اللاعب 1">
+
+            <label for="player1Image">صورة اللاعب 1:</label>
+            <input type="file" id="player1Image" accept="image/*">
+
+            <label for="player2">اسم اللاعب 2:</label>
+            <input type="text" id="player2" placeholder="أدخل اسم اللاعب 2">
+
+            <label for="player2Image">صورة اللاعب 2:</label>
+            <input type="file" id="player2Image" accept="image/*">
+
+            <label for="date">تاريخ التحدي:</label>
+            <input type="date" id="date">
+
+            <label for="time">وقت التحدي:</label>
+            <input type="time" id="time">
+
+            <label for="background">صورة الخلفية:</label>
+            <input type="file" id="background" accept="image/*">
+
+            <button onclick="generateImage()">إنشاء الصورة</button>
+        </div>
+        <div class="result">
+            <h2>الصورة المولدة:</h2>
+            <canvas id="battleCanvas" width="1080" height="1920"></canvas>
+            <a id="downloadLink" href="#" download="battle_image.png">تحميل الصورة</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
