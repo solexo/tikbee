@@ -27,7 +27,14 @@ function generateImage() {
                 const player1Image = new Image();
                 player1Image.src = URL.createObjectURL(player1ImageInput.files[0]);
                 player1Image.onload = () => {
-                    ctx.drawImage(player1Image, 50, 50, 300, 400);
+                    // Draw circular cropped image for Player 1
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.arc(200, 250, 150, 0, Math.PI * 2, true); // Circle for Player 1
+                    ctx.closePath();
+                    ctx.clip();
+                    ctx.drawImage(player1Image, 50, 100, 300, 400);
+                    ctx.restore();
                     ctx.fillText(player1, 50, 470); // Player 1 Name
                 };
             }
@@ -37,7 +44,14 @@ function generateImage() {
                 const player2Image = new Image();
                 player2Image.src = URL.createObjectURL(player2ImageInput.files[0]);
                 player2Image.onload = () => {
-                    ctx.drawImage(player2Image, 450, 50, 300, 400);
+                    // Draw circular cropped image for Player 2
+                    ctx.save();
+                    ctx.beginPath();
+                    ctx.arc(500, 250, 150, 0, Math.PI * 2, true); // Circle for Player 2
+                    ctx.closePath();
+                    ctx.clip();
+                    ctx.drawImage(player2Image, 450, 100, 300, 400);
+                    ctx.restore();
                     ctx.fillText(player2, 450, 470); // Player 2 Name
                 };
             }
