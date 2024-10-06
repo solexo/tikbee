@@ -2,10 +2,10 @@
   "name": "aaaa",
   "version": "1.0.0",
   "main": "script.js",
-  "scripts": {
-    "start": "npx serve -s .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+ "scripts": {
+  "start": "./node_modules/.bin/serve -s .",
+  "test": "echo \"Error: no test specified\" && exit 1"
+}
   "keywords": [],
   "author": "",
   "license": "ISC",
