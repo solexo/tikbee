@@ -4,43 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مولد صور المعركة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <div class="container">
-        <h1>مولد صور المواجهة</h1>
+        <h1 class="marhey-bold">مولد صور المواجهة</h1>
         <div class="form">
-            <label class="label" for="title">عنوان التحدي:</label>
-            <input type="text" id="title" placeholder="أدخل عنوان المعركة">
+            <label for="title" class="marhey-regular">عنوان التحدي:</label>
+            <input type="text" id="title" placeholder="أدخل عنوان المعركة" class="marhey-regular">
 
-            <label class="label" for="player1">اسم اللاعب 1:</label>
-            <input type="text" id="player1" placeholder="أدخل اسم اللاعب 1">
+            <label for="player1" class="marhey-regular">اسم اللاعب 1:</label>
+            <input type="text" id="player1" placeholder="أدخل اسم اللاعب 1" class="marhey-regular">
 
-            <label class="label" for="player1Image">صورة اللاعب 1:</label>
-            <input type="file" id="player1Image" accept="image/*">
+            <label for="player1Image" class="marhey-regular">صورة اللاعب 1:</label>
+            <input type="file" id="player1Image" accept="image/*" class="marhey-regular">
 
-            <label class="label" for="player2">اسم اللاعب 2:</label>
-            <input type="text" id="player2" placeholder="أدخل اسم اللاعب 2">
+            <label for="player2" class="marhey-regular">اسم اللاعب 2:</label>
+            <input type="text" id="player2" placeholder="أدخل اسم اللاعب 2" class="marhey-regular">
 
-            <label class="label" for="player2Image">صورة اللاعب 2:</label>
-            <input type="file" id="player2Image" accept="image/*">
+            <label for="player2Image" class="marhey-regular">صورة اللاعب 2:</label>
+            <input type="file" id="player2Image" accept="image/*" class="marhey-regular">
 
-            <label class="label" for="date">تاريخ التحدي:</label>
-            <input type="date" id="date">
+            <label for="date" class="marhey-regular">تاريخ التحدي:</label>
+            <input type="date" id="date" class="marhey-regular">
 
-            <label class="label" for="time">وقت التحدي:</label>
-            <input type="time" id="time">
+            <label for="time" class="marhey-regular">وقت التحدي:</label>
+            <input type="time" id="time" class="marhey-regular">
 
-            <label class="label" for="background">صورة الخلفية:</label>
-            <input type="file" id="background" accept="image/*">
+            <label for="background" class="marhey-regular">صورة الخلفية:</label>
+            <input type="file" id="background" accept="image/*" class="marhey-regular">
 
-            <button onclick="generateImage()">إنشاء الصورة</button>
+            <button onclick="generateImage()" class="marhey-bold">إنشاء الصورة</button>
         </div>
         <div class="result">
-            <h2>الصورة المولدة:</h2>
+            <h2 class="marhey-bold">الصورة المولدة:</h2>
             <canvas id="battleCanvas" width="1080" height="1920"></canvas>
-            <a id="downloadLink" href="#" download="battle_image.png">تحميل الصورة</a>
+            <a id="downloadLink" href="#" download="battle_image.png" class="marhey-regular">تحميل الصورة</a>
         </div>
     </div>
     <script src="script.js"></script>
