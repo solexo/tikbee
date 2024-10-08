@@ -1,16 +1,19 @@
 {
-  "name": "aaaa",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "socket.io": "^4.8.0",
+    "tiktok-live-connector": "^1.2.0"
+  },
+  "name": "tiktokinteractive-main",
   "version": "1.0.0",
-  "main": "script.js",
+  "description": "To run the chat reader locally, follow these steps:",
+  "main": "connectionWrapper.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "license": "ISC"
 }
